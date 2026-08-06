@@ -1,8 +1,8 @@
 schema_version: 1
 
 context:
-  version: "0.15.3"
-  build_number: 2
+  version: "0.16.0"
+  build_number: 0
 
 package:
   name: "openmc"
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/openmc-dev/openmc/archive/v${{ version }}.tar.gz
-    sha256: 7019d3325cf59b1d1d3176ac85a247e75a1b9efa6ed40bdf0e7178ed4d03b83a
+    sha256: cfdf10f8dc66e652668dbc94501d5ed99b3dfecabc11cf91989a29ba7984654f
     patches:
       - remove-setuptools-from-run-dependencies.patch
   - url: https://github.com/zeux/pugixml/archive/v1.15.tar.gz
